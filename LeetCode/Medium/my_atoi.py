@@ -2,8 +2,6 @@ def add_digit(n: int, c: str) -> int:
     return n * 10 + int(c)
 
 def myAtoi(s: str) -> int:
-    if len(s) > 200:
-        return 0
     n = 0
     sign = 0
     signs = '+-'
