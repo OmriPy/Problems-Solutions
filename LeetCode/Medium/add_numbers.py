@@ -49,23 +49,3 @@ def addTwoNumbers(l1: ListNode, l2: ListNode) -> ListNode:
         pos_ret.next = ListNode(add)
         pos_ret = pos_ret.next
     return ret
-
-
-def print_list_node(l: ListNode):
-    while l != None:
-        print(l.val, end='')
-        l = l.next
-    print()
-
-
-def build_list(num: tuple) -> ListNode:
-    node = None
-    pos_node = None
-    for n in num:
-        if node == None:
-            node = ListNode(n)
-            pos_node = node
-        else:
-            pos_node.next = ListNode(n)
-            pos_node = pos_node.next
-    return node
